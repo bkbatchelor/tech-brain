@@ -1,7 +1,7 @@
 # Tech Second Brain Workspace
 
 ## Directory Overview
-This directory serves as the local operational workspace and toolset for the `TECH-SECOND-BRAIN`, a structured knowledge management system. Its primary purpose is to provide the automation and guidelines needed to process, standardize, tag, and organize raw files and notes imported from a Google Drive `00_inbox` into a structured Second Brain hierarchy (e.g., `01_projects`, `02_areas`, `03_resources`, `04_archives`).
+This directory serves as the local operational workspace and toolset for the `TECH-BRAIN`, a structured knowledge management system. Its primary purpose is to provide the automation and guidelines needed to process, standardize, tag, and organize raw files and notes imported from a Google Drive `00_inbox` into a structured Second Brain hierarchy (e.g., `01_projects`, `02_areas`, `03_resources`, `04_archives`).
 
 ## Key Files & Assets
 The core logic of this workspace is encapsulated within the custom Gemini skills and their associated assets:
@@ -20,7 +20,7 @@ Key workflows are triggered using the following custom commands:
 *   `validate-note`: Checks existing documents to ensure they strictly comply with the `tags_schema.json` and required front-matter formatting rules.
 *   `show-toc`: Generates or displays a comprehensive table of contents for the current state of the knowledge base.
 
-**Important Constraints:** All files processed through this workspace must strictly adhere to the front-matter templates. Private or sandboxed folders (e.g., `_PERSONAL`, `_SANDBOXDEV`) are explicitly excluded from automated processing.
+**Important Constraints:** All files processed through this workspace must strictly adhere to the front-matter templates. MUST explicitly excluded from automated processing any folder that is prefixed with an underscore (`_`) or matches `.Trash*`.
 
 ## Maintenance
 *   **Cleanup:** Always clean up temporary files & folders that were created during the task execution to maintain a clean workspace.
